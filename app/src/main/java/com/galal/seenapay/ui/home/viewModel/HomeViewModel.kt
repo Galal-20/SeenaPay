@@ -1,9 +1,8 @@
-package com.galal.seenapay.ui.home
+package com.galal.seenapay.ui.home.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.galal.seenapay.R
 
 class HomeViewModel : ViewModel() {
 

@@ -1,4 +1,4 @@
-package com.galal.seenapay.ui.home
+package com.galal.seenapay.ui.invoice.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,11 +8,12 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.galal.seenapay.R
-import com.galal.seenapay.databinding.FragmentHomeBinding
+import com.galal.seenapay.databinding.FragmentInvoiceBinding
+import com.galal.seenapay.ui.invoice.viewModel.InvoiceViewModel
 
-class HomeFragment : Fragment() {
+class InvoiceFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentInvoiceBinding? = null
 
     private val binding get() = _binding!!
 
@@ -21,17 +22,16 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this)[HomeViewModel::class.java]
+        val invoiceViewModel =
+            ViewModelProvider(this)[InvoiceViewModel::class.java]
 
-        homeViewModel.setText(getString(R.string.this_is_home_fragment))
+        invoiceViewModel.setText(getString(R.string.this_is_invoice_fragment))
 
-
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentInvoiceBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textNotifications
+        invoiceViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

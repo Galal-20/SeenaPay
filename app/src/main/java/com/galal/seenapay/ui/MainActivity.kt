@@ -1,14 +1,15 @@
-package com.galal.seenapay
+package com.galal.seenapay.ui
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.galal.seenapay.R
 import com.galal.seenapay.databinding.ActivityMainBinding
-import com.galal.seenapay.ui.compass.CompassFragment
-import com.galal.seenapay.ui.home.HomeFragment
-import com.galal.seenapay.ui.invoice.InvoiceFragment
-import com.galal.seenapay.ui.profile.ProfileFragment
+import com.galal.seenapay.ui.compass.view.CompassFragment
+import com.galal.seenapay.ui.home.view.HomeFragment
+import com.galal.seenapay.ui.invoice.view.InvoiceFragment
+import com.galal.seenapay.ui.profile.view.ProfileFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,22 +26,18 @@ class MainActivity : AppCompatActivity() {
         navView.setOnItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.navigation_home -> {
-//                    findNavController(R.id.nav_host_fragment_activity_main).navigate(R.id .navigation_home)
                     replaceFragment(HomeFragment(), getString(R.string.homefragment))
                     true
                 }
                 R.id.compass -> {
-//                    findNavController(R.id.nav_host_fragment_activity_main).navigate(R.id.compassFragment)
                     replaceFragment(CompassFragment(), getString(R.string.compassfragment))
                     true
                 }
                 R.id.invoice -> {
-//                    findNavController(R.id.nav_host_fragment_activity_main).navigate(R.id.invoiceFragment)
                     replaceFragment(InvoiceFragment(), getString(R.string.invoicefragment))
                     true
                 }
                 R.id.profile -> {
-//                    findNavController(R.id.nav_host_fragment_activity_main).navigate(R.id.profileFragment)
                     replaceFragment(ProfileFragment(), getString(R.string.profilefragment))
                     true
                 }

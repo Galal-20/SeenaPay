@@ -1,4 +1,4 @@
-package com.galal.seenapay.ui.invoice
+package com.galal.seenapay.ui.invoice.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

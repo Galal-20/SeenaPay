@@ -1,4 +1,4 @@
-package com.galal.seenapay.ui.profile
+package com.galal.seenapay.ui.profile.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,9 +8,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 import com.galal.seenapay.R
-import com.galal.seenapay.databinding.FragmentInvoiceBinding
 import com.galal.seenapay.databinding.FragmentProfileBinding
-import com.galal.seenapay.ui.invoice.InvoiceViewModel
+import com.galal.seenapay.ui.profile.viewModel.ProfileViewModel
 
 
 class ProfileFragment : Fragment() {
@@ -25,7 +24,7 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val profileViewModel =
-            ViewModelProvider(this).get(ProfileViewModel::class.java)
+            ViewModelProvider(this)[ProfileViewModel::class.java]
 
         profileViewModel.setText(getString(R.string.this_is_profile_fragment))
 

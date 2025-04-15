@@ -1,16 +1,17 @@
-package com.galal.seenapay.ui.compass
+package com.galal.seenapay.ui.profile.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.galal.seenapay.R
 
-class CompassViewModel : ViewModel() {
+class ProfileViewModel: ViewModel() {
 
     private val _text = MutableLiveData<String>()
     val text: LiveData<String> = _text
 
-    fun setText(value: String) {
-        _text.value = value
+    fun setText(string: String){
+        _text.value = string
+
     }
+
 }

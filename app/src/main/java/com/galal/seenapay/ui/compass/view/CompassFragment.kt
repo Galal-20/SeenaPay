@@ -1,4 +1,4 @@
-package com.galal.seenapay.ui.compass
+package com.galal.seenapay.ui.compass.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,13 +9,12 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.galal.seenapay.R
 import com.galal.seenapay.databinding.FragmentCompassBinding
+import com.galal.seenapay.ui.compass.viewModel.CompassViewModel
 
 class CompassFragment : Fragment() {
 
     private var _binding: FragmentCompassBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -24,7 +23,7 @@ class CompassFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val dashboardViewModel =
-            ViewModelProvider(this).get(CompassViewModel::class.java)
+            ViewModelProvider(this)[CompassViewModel::class.java]
 
         dashboardViewModel.setText(getString(R.string.this_is_compass_fragment))
 
