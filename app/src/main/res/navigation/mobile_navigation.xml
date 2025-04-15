@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.galal.seenapay.ui.home.view.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_compassFragment"
+            app:destination="@id/compassFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/compassFragment"
+        android:name="com.galal.seenapay.ui.compass.view.CompassFragment"
+        android:label="fragment_compass"
+        tools:layout="@layout/fragment_compass" >
+        <action
+            android:id="@+id/action_compassFragment_to_invoiceFragment"
+            app:destination="@id/invoiceFragment" />
+        <action
+            android:id="@+id/action_compassFragment_to_invoiceFragment2"
+            app:destination="@id/invoiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/invoiceFragment"
+        android:name="com.galal.seenapay.ui.invoice.view.InvoiceFragment"
+        android:label="fragment_invoice"
+        tools:layout="@layout/fragment_invoice" >
+        <action
+            android:id="@+id/action_invoiceFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.galal.seenapay.ui.profile.view.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

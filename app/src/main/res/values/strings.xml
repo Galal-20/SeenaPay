@@ -3,4 +3,36 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="homefragment">HomeFragment</string>
+    <string name="compassfragment">CompassFragment</string>
+    <string name="invoicefragment">InvoiceFragment</string>
+    <string name="profilefragment">ProfileFragment</string>
+    <string name="this_is_home_fragment">This is home Fragment</string>
+    <string name="this_is_compass_fragment">This is Compass Fragment</string>
+    <string name="this_is_invoice_fragment">The is invoice Fragment</string>
+    <string name="this_is_profile_fragment">This is Profile Fragment</string>
+    <string name="easy_simple_recipe">Easy &amp; Simple Recipe</string>
+    <string name="see_more"><u>See More</u></string>
+    <string name="hello_seena_pay">Hello, Seena Pay</string>
+    <string name="scrambled_egg">Scrambled Egg</string>
+    <string name="_4_9_5k_reviews">4.9 | 5k Reviews</string>
+    <string name="gordon_ramsay">Gordon Ramsay</string>
+    <string name="grilled_cheese_sandwich">Grilled Cheese Sandwich</string>
+    <string name="_4_9_4k_reviews">4.9 | 4k Reviews</string>
+    <string name="alain_ducasse">Alain Ducasse</string>
+    <string name="pasta_with_garlic">Pasta with Garlic</string>
+    <string name="_4_8_3_5k_reviews">4.8 | 3.5k Reviews</string>
+    <string name="yannick_all_no">Yannick Alléno</string>
+    <string name="nasi_goreng_rendang">Nasi Goreng Rendang</string>
+    <string name="_5_7k_reviews">5 | 7k Reviews</string>
+    <string name="william_wongso">William Wongso</string>
+    <string name="coto_makassar">Coto Makassar</string>
+    <string name="_4_9_1k_reviews">4.9 | 1k Reviews</string>
+    <string name="arnold_poernomo">Arnold Poernomo</string>
+    <string name="ayam_betutu">Ayam Betutu</string>
+    <string name="juna_rorimpandey">Juna Rorimpandey</string>
+    <string name="add">Add</string>
+
 </resources>
