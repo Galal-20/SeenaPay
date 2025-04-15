@@ -492,6 +492,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             android:layout_marginEnd="20dp"
+                            android:textStyle="bold"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             />
 
@@ -514,6 +515,59 @@
                         tools:ignore="NotSibling" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
+                
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:id="@+id/divider"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/grid"
+                    android:layout_marginTop="15dp"
+                    app:dividerColor="#F0F0F0"
+
+                    />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seeMore2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/divider"
+                    android:layout_marginTop="20dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/egyptianFood"
+                        android:text="@string/egyptian_food"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="20dp"
+                        tools:targetApi="24"
+                        android:autoLink="none"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/see_more"
+                        android:textSize="16sp"
+                        android:textColor="@color/primaryColorApp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginEnd="20dp"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/egyptianFoodRecyclerView"
@@ -521,7 +575,7 @@
                     android:layout_height="0dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/grid"
+                    app:layout_constraintTop_toBottomOf="@id/seeMore2"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="24dp"
                     android:layout_marginStart="15dp"

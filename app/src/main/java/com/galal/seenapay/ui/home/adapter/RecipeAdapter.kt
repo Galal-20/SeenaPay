@@ -1,5 +1,6 @@
 package com.galal.seenapay.ui.home.adapter
 
+import android.graphics.Paint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,7 +32,11 @@ class RecipeAdapter(private val items: List<Recipe>) :
         holder.title.text = item.title
         holder.rating.text = item.rating
         holder.chef.text = item.chef
+
+        holder.rating.paintFlags = holder.rating.paintFlags or Paint.UNDERLINE_TEXT_FLAG
+        holder.chef.paintFlags = holder.chef.paintFlags or Paint.UNDERLINE_TEXT_FLAG
     }
+
 
     override fun getItemCount() = items.size
 }
