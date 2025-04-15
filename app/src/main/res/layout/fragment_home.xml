@@ -525,6 +525,7 @@
                     app:layout_constraintTop_toBottomOf="@id/grid"
                     android:layout_marginTop="15dp"
                     app:dividerColor="#F0F0F0"
+
                     />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
