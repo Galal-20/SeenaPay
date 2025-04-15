@@ -60,7 +60,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:text="@string/_4_8_3_5k_reviews"
             android:textSize="14sp"
-            android:textColor="@color/primaryColorApp"
+            android:textColor="#A6A6A6"
             android:layout_marginTop="4dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -89,7 +89,7 @@
             app:layout_constraintStart_toEndOf="@id/icon"
             android:text="@string/gordon_ramsay"
             android:textSize="14sp"
-            android:textColor="@color/primaryColorApp"
+            android:textColor="@color/black"
             android:layout_marginTop="4dp" />
         
     </androidx.constraintlayout.widget.ConstraintLayout>
